@@ -3,7 +3,7 @@ Lab 1 - First Impression of Python
 (100 marks in total, including
 4 exercises + submission (10 marks))
 
-Your Name 😍:
+Your Name 😍: Evelyn McCammon
 Lab Due: 5:00pm on Jan. 09, 2026
 
 Objective (By the end of this lab, you will be able to):
@@ -58,9 +58,9 @@ print("The area of a rectangle with length 3 and width 4 is", 3 * 4)
 # Then change the variable values from line 61 to 65 to your info. 
 #---------------------------------------------------------
 
-name = "Alice"
-hobby = "hockey"
-coding_experience = "advanced"
+name = "Evelyn McCammon"
+hobby = "art, hiking, and baking"
+coding_experience = "beginner"
 weekly_hours_learn_coding = 8
 my_github_comp115_repo = "https://github.com/awang-capu/comp115-capu"
 print(f"""
@@ -68,7 +68,7 @@ Hi,
 
 I am {name}. I like {hobby}.
 
-My experience level in coding is {coding_experience}, at least I think.
+My experience level in coding is {coding_experience}, I have some experience with java script from my graphic design practice.
 I would love to learning coding {weekly_hours_learn_coding} hours per week.
 Here is my COMP115 repo at GitHub: {my_github_comp115_repo}.
 Hope we will have fun in learning Python together this term! 
