@@ -1,0 +1,46 @@
+def sum_list(nums):
+    """This is a demonstration of function definition."""
+    total = 0 
+    for num in nums:
+        total = total + num
+    return total
+    
+print(sum_list([3, 4, 8]))  
+
+#multiple rainbow examples
+
+import turtle
+pen = turtle.Turtle()
+drawing_screen = turtle.Screen()
+
+
+def draw_rainbow(alex, x, y):
+    num_circles = 7
+    alex.up()
+    alex.goto(x, y) 
+    rainbow_colors = ["#582F6B", "#19477C", "#2A8F9E", "#2CBE64", "#F1D747","#FA8901", "#ED3847"]
+    radius = 30 
+    radius_increase = 10
+    alex.speed(5)
+    alex.pensize(radius_increase) 
+    alex.up()
+
+    for rainbow_color in rainbow_colors:
+        alex.color(rainbow_color)
+
+        alex.backward(radius)
+        alex.left(90)
+        alex.down()
+        alex.circle(-radius, 180)
+        alex.left(90)
+        alex.up()
+        alex.backward(radius)
+
+        radius = radius + radius_increase
+    alex.shape("blank")
+
+draw_rainbow(pen, 20,120)
+draw_rainbow(pen, 100,100)
+
+drawing_screen.mainloop() 
+
