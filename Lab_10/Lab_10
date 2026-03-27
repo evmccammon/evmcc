@@ -235,14 +235,13 @@ def create_random_noise(width, height):
     """
     Create an image called img4_random.png where each pixel has a 50% chance of being white or black.
     """
-    im = Image.new("RGB", (width, height))
+    im = Image.new("L", (width, height))
     pixels = im.load()
 
     for row in range(height):
         for col in range(width):
-            b = random.randint(0, 0, 0)
-            w = random.randint(255, 255, 255)
-            pixels[row, col] = (b, w)
+            gray = random.randint(0, 255)
+            pixels[row, col] = gray
 
     im.save("img4_random.png")
 
